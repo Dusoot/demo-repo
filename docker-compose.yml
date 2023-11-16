@@ -1,6 +1,6 @@
 version: '3'
 
 services:
-  my-container:
-    image: my-app 
+  demo:
+    image: demo-app
    

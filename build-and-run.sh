@@ -1,6 +1,6 @@
 #! /bin/bash
 
-docker build -t my-app .
+docker build -t demo-app .
 
 docker-compose up
  
