@@ -7,6 +7,8 @@ services:
       - .env
   redis:
     image: bitnami/redis
+    volumes:
+      - redis-data:/var/lib/redis/data
     environment:
       - REDIS_PASSWORD=b406adas45das45wqwqw_daa
     ports:
@@ -14,6 +16,8 @@ services:
   db:
     image: postgres
     restart: always
+    volumes:
+      - bd-data:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: kygvthjtbvbdcnnnjj1
       POSTGRES_USER: demo-user
