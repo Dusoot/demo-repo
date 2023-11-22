@@ -1,6 +1,6 @@
 #! /bin/bash
 
-docker build -t demo-app .
+docker build --progress=plain -t demo-app .
 
 docker-compose up
  
