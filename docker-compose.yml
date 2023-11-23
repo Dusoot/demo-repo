@@ -5,6 +5,8 @@ services:
     image: demo-app
     env_file:
       - .env
+    ports:
+      - 8888:80
   redis:
     image: bitnami/redis
     volumes:
