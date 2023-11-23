@@ -6,7 +6,7 @@ services:
     env_file:
       - .env
     ports:
-      - 8888:80
+      - 80:8888
   redis:
     image: bitnami/redis
     volumes:
