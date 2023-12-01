@@ -5,8 +5,8 @@ WORKDIR build
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
-RUN mkdir src
-COPY src src
+ADD src/ src
+
 RUN mvn package -Dmaven.test.skip=true
 
 FROM openjdk:17-jdk-slim
