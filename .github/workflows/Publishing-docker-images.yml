@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ github.sha }}
+          tags: duskosotirovski/demo-repo:${{ github.sha }}
