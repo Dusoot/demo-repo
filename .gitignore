@@ -1,0 +1,7 @@
+*.class
+*.dll
+*.exe
+
+*.log
+
+target/
